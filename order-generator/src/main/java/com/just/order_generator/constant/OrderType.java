@@ -5,6 +5,4 @@ public enum OrderType {
     SELL,
     BUY_LIMIT,
     SELL_LIMIT,
-    BUY_STOP,
-    SELL_STOP
 }
