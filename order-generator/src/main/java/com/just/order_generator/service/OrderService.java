@@ -29,7 +29,7 @@ public class OrderService {
 //        double minQuantity = 0.01;
 //        double maxQuantity = 3.00;
 
-        System.out.println("MIN PRICE: " + minPrice + "MAX PRICE: " + maxPrice + "MAX PRICE > MIN PRICE: " + (maxPrice > minPrice));
+        //System.out.println("MIN PRICE: " + minPrice + "MAX PRICE: " + maxPrice + "MAX PRICE > MIN PRICE: " + (maxPrice > minPrice));
         double executionPrice = formatPrice(rand.nextDouble(minPrice, maxPrice));
         double quantity = formatPrice(rand.nextDouble(minQuantity, maxQuantity));
         double takeProfit = formatPrice(rand.nextDouble(executionPrice, maxPrice));
@@ -40,7 +40,7 @@ public class OrderService {
     }
 
     @Scheduled(fixedRate = 100)
-    public void printOrders(){
+    private void printOrders(){
         String RESET = "\u001B[0m";
         String RED = "\u001B[31m";
         String GREEN = "\u001B[32m";
